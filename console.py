@@ -32,10 +32,7 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter
-    Attributes:
-        prompt (str): The command prompt.
-    """
+    """HBNBCommand class for handling commands in your application"""
 
     prompt = "(hbnb) "
     __classes = {
@@ -49,11 +46,11 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def empt(self):
-        """Do nothing upon receiving an empty line."""
+        """Placeholder method with an empty docstring"""
         pass
 
     def default(self, arg):
-        """Default behavior for cmd module when input is invalid"""
+        """Default method for handling unknown commands"""
         ar = {
             "all": self.do_all,
             "show": self.do_show,
